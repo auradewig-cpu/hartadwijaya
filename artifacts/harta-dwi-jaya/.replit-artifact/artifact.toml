@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "CV Harta Dwi Jaya"
+version = "1.0.0"
+id = "artifacts/harta-dwi-jaya"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23391
+
+[services.development]
+run = "pnpm --filter @workspace/harta-dwi-jaya run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/harta-dwi-jaya", "run", "build" ]
+publicDir = "artifacts/harta-dwi-jaya/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23391"
+BASE_PATH = "/"
