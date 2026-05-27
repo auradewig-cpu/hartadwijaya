@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const images = [
   "https://res.cloudinary.com/dmrjs8ryu/image/upload/v1779906435/unnamed_2_ok38cd.webp",
   "https://res.cloudinary.com/dmrjs8ryu/image/upload/v1779906435/unnamed_7_f87bdr.webp",
   "https://res.cloudinary.com/dmrjs8ryu/image/upload/v1779906434/unnamed_3_wyj3bi.webp"
 ];
+
+function scrollTo(id: string) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 
 export default function Hero() {
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -23,7 +27,7 @@ export default function Hero() {
       {images.map((img, idx) => (
         <div
           key={idx}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+          className={`absolute inset-0 transition-opacity duration-[1500ms] ease-in-out ${
             idx === currentIdx ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -36,57 +40,63 @@ export default function Hero() {
           />
         </div>
       ))}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-dark-bg/60 to-dark-bg" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/55 to-[#0D0D14]/95" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-left pt-20">
-        <div className="inline-block bg-dark-surface/50 backdrop-blur-sm border border-gold/30 rounded-full px-4 py-1.5 mb-6">
-          <span className="text-gold text-xs md:text-sm font-heading tracking-widest uppercase">
-            ✦ Arsitek & Kontraktor Terpercaya di Bali ✦
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-left pt-20 w-full">
+        <div className="inline-flex items-center gap-2 bg-[rgba(200,169,110,0.12)] backdrop-blur-sm border border-[rgba(200,169,110,0.40)] rounded-full px-5 py-2 mb-8">
+          <span className="text-[#C8A96E] text-xs md:text-sm font-heading tracking-[0.15em] uppercase">
+            ✦ Arsitek &amp; Kontraktor Terpercaya di Bali ✦
           </span>
         </div>
-        
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-tight mb-6">
+
+        <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-serif text-[#F0EBE0] leading-[1.1] tracking-[-0.02em] mb-6">
           Membangun Visi,<br />
-          <span className="text-gold italic">Melampaui Ekspektasi.</span>
+          <span className="text-[#C8A96E] italic">Melampaui Ekspektasi.</span>
         </h1>
-        
-        <p className="text-white/80 text-lg md:text-xl font-light max-w-2xl mb-10 leading-relaxed">
+
+        <p className="text-[#F0EBE0]/80 text-lg md:text-xl font-light max-w-[580px] mb-10 leading-relaxed">
           Kami menghadirkan solusi arsitektur dan konstruksi kelas atas yang mencerminkan keindahan, ketahanan, dan karakter unik setiap klien.
         </p>
-        
+
         <div className="flex flex-col sm:flex-row gap-4">
-          <Button className="bg-gold hover:bg-gold-light text-dark-bg text-lg px-8 py-6 rounded-none font-heading tracking-wide">
+          <button
+            onClick={() => scrollTo("portofolio")}
+            className="bg-[#C8A96E] hover:bg-[#E2C98A] text-[#0D0D14] font-heading font-semibold uppercase tracking-[0.08em] px-8 py-4 rounded-full text-sm transition-all duration-300 hover:shadow-[0_4px_24px_rgba(200,169,110,0.4)] hover:scale-[1.02] active:scale-[0.98]"
+          >
             Lihat Portofolio
-          </Button>
-          <Button variant="outline" className="border-gold text-gold hover:bg-gold/10 text-lg px-8 py-6 rounded-none font-heading tracking-wide">
+          </button>
+          <button
+            onClick={() => scrollTo("kontak")}
+            className="border border-[#C8A96E] text-[#C8A96E] hover:bg-[rgba(200,169,110,0.12)] font-heading font-semibold uppercase tracking-[0.08em] px-8 py-4 rounded-full text-sm transition-all duration-300"
+          >
             Konsultasi Gratis
-          </Button>
+          </button>
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-0 w-full z-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="backdrop-blur-md bg-white/5 border-y border-white/10 py-6 flex flex-col md:flex-row justify-around items-center gap-6">
+      <div className="absolute bottom-0 left-0 w-full z-20">
+        <div className="bg-[rgba(13,13,20,0.40)] backdrop-blur-md border-t border-[rgba(200,169,110,0.20)] py-5">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-row justify-around items-center gap-4">
             <div className="text-center">
-              <span className="block font-serif text-3xl text-gold mb-1">10+</span>
-              <span className="font-heading text-xs uppercase tracking-widest text-white/70">Tahun Pengalaman</span>
+              <span className="block font-serif text-3xl md:text-4xl text-[#C8A96E] mb-1 leading-none">10+</span>
+              <span className="font-heading text-[0.65rem] uppercase tracking-[0.15em] text-[#F0EBE0]/70">Tahun Pengalaman</span>
             </div>
-            <div className="hidden md:block w-px h-10 bg-white/10" />
+            <div className="w-px h-10 bg-[rgba(200,169,110,0.25)]" />
             <div className="text-center">
-              <span className="block font-serif text-3xl text-gold mb-1">100+</span>
-              <span className="font-heading text-xs uppercase tracking-widest text-white/70">Proyek Selesai</span>
+              <span className="block font-serif text-3xl md:text-4xl text-[#C8A96E] mb-1 leading-none">100+</span>
+              <span className="font-heading text-[0.65rem] uppercase tracking-[0.15em] text-[#F0EBE0]/70">Proyek Selesai</span>
             </div>
-            <div className="hidden md:block w-px h-10 bg-white/10" />
+            <div className="w-px h-10 bg-[rgba(200,169,110,0.25)]" />
             <div className="text-center">
-              <span className="block font-serif text-3xl text-gold mb-1">50+</span>
-              <span className="font-heading text-xs uppercase tracking-widest text-white/70">Klien Puas</span>
+              <span className="block font-serif text-3xl md:text-4xl text-[#C8A96E] mb-1 leading-none">50+</span>
+              <span className="font-heading text-[0.65rem] uppercase tracking-[0.15em] text-[#F0EBE0]/70">Klien Puas</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce z-20 hidden md:block">
-        <ChevronDown className="text-gold w-8 h-8 opacity-70" />
+      <div className="absolute bottom-[90px] left-1/2 -translate-x-1/2 animate-bounce z-10">
+        <ChevronDown className="w-7 h-7 opacity-60" style={{ color: "#C8A96E" }} />
       </div>
 
       <style dangerouslySetInnerHTML={{__html: `
