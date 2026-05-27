@@ -63,7 +63,7 @@ export default function Footer() {
                 <FacebookIcon />
               </a>
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/62811395113"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp CV Harta Dwi Jaya"
@@ -137,7 +137,7 @@ export default function Footer() {
             <ul className="space-y-5 font-sans text-sm text-white/55">
               <li>
                 <span className="block text-[#C8A96E]/60 text-[0.65rem] uppercase tracking-widest mb-1">Alamat</span>
-                <span>Bali, Indonesia</span>
+                <span>Jl. Wagimin, Kediri, Kec. Kediri,<br />Kab. Tabanan, Bali 82121</span>
                 <a
                   href="https://maps.app.goo.gl/hC1CMJZjtjfsXhZF7"
                   target="_blank"
@@ -149,8 +149,8 @@ export default function Footer() {
               </li>
               <li>
                 <span className="block text-[#C8A96E]/60 text-[0.65rem] uppercase tracking-widest mb-1">Telepon / WA</span>
-                <a href="https://wa.me/6281234567890" className="hover:text-[#C8A96E] transition-colors">
-                  +62 812 3456 7890
+                <a href="https://wa.me/62811395113" className="hover:text-[#C8A96E] transition-colors">
+                  0811 395 113
                 </a>
               </li>
               <li>
@@ -169,7 +169,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-3 text-xs font-sans text-white/35">
           <p>&copy; 2025 CV Harta Dwi Jaya. Semua hak dilindungi.</p>
-          <p>Bali, Indonesia</p>
+          <p>Kediri, Tabanan – Bali</p>
         </div>
       </div>
     </footer>

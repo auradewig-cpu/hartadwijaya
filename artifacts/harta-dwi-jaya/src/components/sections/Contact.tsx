@@ -23,7 +23,7 @@ Pesan:
 ${formData.message}`;
 
     const encodedText = encodeURIComponent(text);
-    window.open(`https://wa.me/6281234567890?text=${encodedText}`, "_blank");
+    window.open(`https://wa.me/62811395113?text=${encodedText}`, "_blank");
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -165,7 +165,7 @@ ${formData.message}`;
               <p className="text-center text-[#6B6577] text-sm font-sans">
                 Atau langsung{" "}
                 <a
-                  href="https://wa.me/6281234567890?text=Halo%2C+saya+ingin+konsultasi+mengenai+proyek+bangunan"
+                  href="https://wa.me/62811395113?text=Halo%2C+saya+ingin+konsultasi+mengenai+proyek+bangunan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#A08050] hover:text-[#C8A96E] underline transition-colors"
@@ -187,7 +187,7 @@ ${formData.message}`;
               <div className="flex items-start gap-4 py-5">
                 <div className="text-[#C8A96E] mt-0.5 shrink-0"><MapPin size={20} /></div>
                 <div>
-                  <h4 className="font-heading font-bold text-[#1A1A2E] text-sm mb-1">Bali, Indonesia</h4>
+                  <h4 className="font-heading font-bold text-[#1A1A2E] text-sm mb-1">Jl. Wagimin, Kediri, Kec. Kediri,<br />Kab. Tabanan, Bali 82121</h4>
                   <a
                     href="https://maps.app.goo.gl/hC1CMJZjtjfsXhZF7"
                     target="_blank"
@@ -202,9 +202,9 @@ ${formData.message}`;
               <div className="flex items-start gap-4 py-5">
                 <div className="text-[#C8A96E] mt-0.5 shrink-0"><Phone size={20} /></div>
                 <div>
-                  <h4 className="font-heading font-bold text-[#1A1A2E] text-sm mb-1">+62 812 3456 7890</h4>
+                  <h4 className="font-heading font-bold text-[#1A1A2E] text-sm mb-1">0811 395 113</h4>
                   <a
-                    href="https://wa.me/6281234567890"
+                    href="https://wa.me/62811395113"
                     target="_blank"
                     rel="noreferrer"
                     className="text-[#A08050] hover:text-[#C8A96E] text-sm font-sans transition-colors"
@@ -243,7 +243,7 @@ ${formData.message}`;
 
             <div className="flex-grow min-h-[260px] rounded-xl overflow-hidden border border-[rgba(200,169,110,0.20)] shadow-[0_4px_20px_rgba(13,13,20,0.08)]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126861.77278474893!2d115.08879!3d-8.409518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22f4dc4a27fff%3A0xfcf1c960aa1e2ac6!2sBali%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1620000000000!5m2!1sen!2sid"
+                src="https://www.google.com/maps?q=Jl.+Wagimin,+Kediri,+Kec.+Kediri,+Kabupaten+Tabanan,+Bali+82121,+Indonesia&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: "260px" }}

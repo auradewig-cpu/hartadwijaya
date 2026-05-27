@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const WA_URL = "https://wa.me/6281234567890?text=Halo%2C+saya+ingin+konsultasi+mengenai+proyek+bangunan";
+const WA_URL = "https://wa.me/62811395113?text=Halo%2C+saya+ingin+konsultasi+mengenai+proyek+bangunan";
 
 export default function WhatsAppBubble() {
   const [showBadge, setShowBadge] = useState(false);
