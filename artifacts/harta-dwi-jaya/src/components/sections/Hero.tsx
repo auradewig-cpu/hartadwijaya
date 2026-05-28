@@ -42,7 +42,7 @@ export default function Hero() {
       ))}
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/55 to-[#0D0D14]/95" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-left pt-20 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-left pt-14 md:pt-20 pb-28 md:pb-32 w-full">
         <div className="inline-flex items-center gap-2 bg-[rgba(200,169,110,0.12)] backdrop-blur-sm border border-[rgba(200,169,110,0.40)] rounded-full px-5 py-2 mb-8">
           <span className="text-[#C8A96E] text-xs md:text-sm font-heading tracking-[0.15em] uppercase">
             ✦ Arsitek &amp; Kontraktor Terpercaya di Bali ✦
