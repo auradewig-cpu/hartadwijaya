@@ -23,7 +23,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="beranda" className="relative w-full min-h-[100svh] flex items-center">
+    <section id="beranda" className="relative w-full min-h-[100svh] flex flex-col">
       {images.map((img, idx) => (
         <div
           key={idx}
@@ -74,29 +74,29 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full z-20">
-        <div className="bg-[rgba(13,13,20,0.40)] backdrop-blur-md border-t border-[rgba(200,169,110,0.20)] py-3 md:py-5">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-around items-center gap-3 md:gap-4">
+      <div className="absolute bottom-4 left-0 w-full z-20 px-4 md:px-8">
+        <div className="bg-[rgba(13,13,20,0.60)] backdrop-blur-xl border border-[rgba(200,169,110,0.25)] rounded-2xl shadow-2xl py-2 md:py-3">
+          <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-around items-center gap-2 md:gap-4">
             <div className="text-center">
-              <span className="block font-serif text-2xl sm:text-3xl md:text-4xl text-[#C8A96E] mb-0.5 leading-none">10+</span>
+              <span className="block font-serif text-xl sm:text-2xl md:text-3xl text-[#C8A96E] mb-0.5 leading-none">10+</span>
               <span className="font-heading text-[0.6rem] sm:text-[0.65rem] uppercase tracking-[0.15em] text-[#F0EBE0]/70">
                 Tahun Pengalaman
               </span>
             </div>
 
-            <div className="w-px h-6 bg-[rgba(200,169,110,0.25)] hidden md:block" />
+            <div className="w-px h-5 bg-[rgba(200,169,110,0.25)] hidden md:block" />
 
             <div className="text-center">
-              <span className="block font-serif text-2xl sm:text-3xl md:text-4xl text-[#C8A96E] mb-0.5 leading-none">100+</span>
+              <span className="block font-serif text-xl sm:text-2xl md:text-3xl text-[#C8A96E] mb-0.5 leading-none">100+</span>
               <span className="font-heading text-[0.6rem] sm:text-[0.65rem] uppercase tracking-[0.15em] text-[#F0EBE0]/70">
                 Proyek Selesai
               </span>
             </div>
 
-            <div className="w-px h-6 bg-[rgba(200,169,110,0.25)] hidden md:block" />
+            <div className="w-px h-5 bg-[rgba(200,169,110,0.25)] hidden md:block" />
 
             <div className="text-center">
-              <span className="block font-serif text-2xl sm:text-3xl md:text-4xl text-[#C8A96E] mb-0.5 leading-none">50+</span>
+              <span className="block font-serif text-xl sm:text-2xl md:text-3xl text-[#C8A96E] mb-0.5 leading-none">50+</span>
               <span className="font-heading text-[0.6rem] sm:text-[0.65rem] uppercase tracking-[0.15em] text-[#F0EBE0]/70">
                 Klien Puas
               </span>
