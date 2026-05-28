@@ -102,38 +102,12 @@ export default function Hero() {
                   Klien Puas
                 </span>
               </div>
-            </div>
           </div>
           <button onClick={() => scrollTo("tentang")} className="w-7 h-7 opacity-60" style={{ color: "#C8A96E" }}>
             <ChevronDown className="w-7 h-7" />
           </button>
-
-              <div className="w-px h-5 bg-[rgba(200,169,110,0.25)] hidden md:block" />
-
-              <div className="text-center">
-                <span className="block font-serif text-xl sm:text-2xl md:text-3xl text-[#C8A96E] mb-0.5 leading-none">100+</span>
-                <span className="font-heading text-[0.6rem] sm:text-[0.65rem] uppercase tracking-[0.15em] text-[#F0EBE0]/70">
-                  Proyek Selesai
-                </span>
-              </div>
-
-              <div className="w-px h-5 bg-[rgba(200,169,110,0.25)] hidden md:block" />
-
-              <div className="text-center">
-                <span className="block font-serif text-xl sm:text-2xl md:text-3xl text-[#C8A96E] mb-0.5 leading-none">50+</span>
-                <span className="font-heading text-[0.6rem] sm:text-[0.65rem] uppercase tracking-[0.15em] text-[#F0EBE0]/70">
-                  Klien Puas
-                </span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-
-
-
-
-
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes kenburns {
           0% { transform: scale(1); }
