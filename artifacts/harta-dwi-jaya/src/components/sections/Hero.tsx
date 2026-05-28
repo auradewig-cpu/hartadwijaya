@@ -23,7 +23,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="beranda" className="relative w-full h-[100svh] min-h-screen flex items-center overflow-hidden">
+    <section id="beranda" className="relative w-full min-h-[100svh] flex items-center">
       {images.map((img, idx) => (
         <div
           key={idx}
@@ -42,7 +42,7 @@ export default function Hero() {
       ))}
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/55 to-[#0D0D14]/95" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-left pt-14 md:pt-20 pb-28 md:pb-32 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-left pt-8 md:pt-16 pb-40 md:pb-24 w-full">
         <div className="inline-flex items-center gap-2 bg-[rgba(200,169,110,0.12)] backdrop-blur-sm border border-[rgba(200,169,110,0.40)] rounded-full px-5 py-2 mb-8">
           <span className="text-[#C8A96E] text-xs md:text-sm font-heading tracking-[0.15em] uppercase">
             ✦ Arsitek &amp; Kontraktor Terpercaya di Bali ✦
@@ -75,21 +75,31 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-0 left-0 w-full z-20">
-        <div className="bg-[rgba(13,13,20,0.40)] backdrop-blur-md border-t border-[rgba(200,169,110,0.20)] py-5">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-row justify-around items-center gap-4">
+        <div className="bg-[rgba(13,13,20,0.40)] backdrop-blur-md border-t border-[rgba(200,169,110,0.20)] py-3 md:py-5">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-around items-center gap-3 md:gap-4">
             <div className="text-center">
-              <span className="block font-serif text-3xl md:text-4xl text-[#C8A96E] mb-1 leading-none">10+</span>
-              <span className="font-heading text-[0.65rem] uppercase tracking-[0.15em] text-[#F0EBE0]/70">Tahun Pengalaman</span>
+              <span className="block font-serif text-2xl sm:text-3xl md:text-4xl text-[#C8A96E] mb-0.5 leading-none">10+</span>
+              <span className="font-heading text-[0.6rem] sm:text-[0.65rem] uppercase tracking-[0.15em] text-[#F0EBE0]/70">
+                Tahun Pengalaman
+              </span>
             </div>
-            <div className="w-px h-10 bg-[rgba(200,169,110,0.25)]" />
+
+            <div className="w-px h-6 bg-[rgba(200,169,110,0.25)] hidden md:block" />
+
             <div className="text-center">
-              <span className="block font-serif text-3xl md:text-4xl text-[#C8A96E] mb-1 leading-none">100+</span>
-              <span className="font-heading text-[0.65rem] uppercase tracking-[0.15em] text-[#F0EBE0]/70">Proyek Selesai</span>
+              <span className="block font-serif text-2xl sm:text-3xl md:text-4xl text-[#C8A96E] mb-0.5 leading-none">100+</span>
+              <span className="font-heading text-[0.6rem] sm:text-[0.65rem] uppercase tracking-[0.15em] text-[#F0EBE0]/70">
+                Proyek Selesai
+              </span>
             </div>
-            <div className="w-px h-10 bg-[rgba(200,169,110,0.25)]" />
+
+            <div className="w-px h-6 bg-[rgba(200,169,110,0.25)] hidden md:block" />
+
             <div className="text-center">
-              <span className="block font-serif text-3xl md:text-4xl text-[#C8A96E] mb-1 leading-none">50+</span>
-              <span className="font-heading text-[0.65rem] uppercase tracking-[0.15em] text-[#F0EBE0]/70">Klien Puas</span>
+              <span className="block font-serif text-2xl sm:text-3xl md:text-4xl text-[#C8A96E] mb-0.5 leading-none">50+</span>
+              <span className="font-heading text-[0.6rem] sm:text-[0.65rem] uppercase tracking-[0.15em] text-[#F0EBE0]/70">
+                Klien Puas
+              </span>
             </div>
           </div>
         </div>
